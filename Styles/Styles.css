@@ -98,7 +98,7 @@ nav a {
 }
 
 @media screen and (max-width: 996px) {
-/*Modification de la police des titres*/
+/*Modification de la police des titres, la dispostion des éléments de l'en-tête et du bas de page*/
     header nav {
         flex-direction: column;
         justify-content: center;
