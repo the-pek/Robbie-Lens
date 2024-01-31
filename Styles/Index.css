@@ -1,0 +1,129 @@
+/*Accueil est utilisé pour modifier la structure de la présentation
+de la présentation générale de robbie
+*/
+.accueil {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    gap: 15px;
+}
+
+.accueil h1 {
+    margin-bottom: 15px;
+}
+  
+.accueil p {
+    margin-bottom: 30px;
+}
+  
+.accueil div {
+    padding-right: 80px;
+  }
+
+/*modification de la setion de la présentation du dernier
+projet de robbie (de ".projet" à ".projet div")
+*/
+.projet {
+    background-color: white;
+}
+
+.projet h2 {
+    color: #1F2039;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.projet div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+    gap: 15px;
+}
+
+.contact h2 {
+    color: #a5b4fc;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+}
+
+.perso {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.name {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+    margin: auto;
+}
+
+input{
+    width: 95%;
+}
+
+textarea{
+width: 98%;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 996px) {
+    /*Modification de la disposition des éléments après réduction de la page
+    de ".accueil" à ".projet div" Cela concerne la page d'accueil*/
+        .accueil{
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+        .accueil div {
+            padding-right: 0;
+            text-align: center;
+        }
+        .accueil img{
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    
+        form{
+            display: flex;
+            flex-direction: column;
+            max-width: 1000px;
+        }
+        form .perso {
+            flex-direction: column;
+        }
+        .projet{
+            flex-direction: column;
+        }
+        .projet div {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }

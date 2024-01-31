@@ -1,0 +1,55 @@
+/* Mise en place des bordures sur la personalité de robbie
+*/
+.bor{
+    border-right: solid #8E86B5 1px;
+    border-bottom: solid #8E86B5 1px;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.a-propos-main {
+    width: 50%;
+    margin: auto;
+}
+
+h2, ul {
+    margin-top: 30px;
+}
+
+
+
+/*
+Mise en page de la grille tarifaire
+*/
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    margin: 50px;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+td, th {
+    border: solid 1px #A5B4FC;
+    padding: 15px;
+}
+
+td {
+    padding: 80px;
+}
+
+@media screen and (max-width: 996px) {
+    /*La section tarif est masquée après la réduction de la taille de l'écran*/
+        .Tableau{
+            display: none;
+        }
+    }

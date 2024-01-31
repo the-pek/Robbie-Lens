@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+}
+
+/* De "a" à "ul" c'est la mise en page des différents éléments des pages
+*/
+a :hover{
+    color: black;
+    font-size: 1em;
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none, underline;
+}
+
+em {
+    color: #A5B4FC;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #A5B4FC;
+}
+
+p {
+    font-size: 1.1em;
+    font-family: 'Manrope', sans-serif;
+}
+
+ul {
+    font-size: 1em;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* ici c'est l'allure générale de l'en-tête et du pied de page
+des différentes pages
+*/
+header, footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+    color: #242424;
+
+}
+
+/* modifaction de la police de la page
+*/
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #1F2039;
+}
+
+p, li, h2 {
+    color: #F9F8FF;
+}
+
+.bas_page {
+    display: inline-block;
+    background-color:rgb(142,134,181);
+    border-radius: 50px;
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+}
+
+
+.bas_page:hover {/*Modification de l'apparence au survol
+                */
+    text-decoration: none;
+    background: linear-gradient(#696484, #8788ba);
+}
+
+
+footer div :hover{/* Modification au survol des liens images
+                */
+    opacity: 0.5;
+}
+
+section {
+    padding: 20px;
+}
+
+
+/* Ici c'est la disposition des éléments de l'en-tête
+et du pied de page des pages
+*/
+nav, footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+nav a {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 996px) {
+/*Modification de la police des titres*/
+    header nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav img{
+        margin-bottom: 15px;
+    }
+
+    header, footer{
+        padding: 20px 20px;
+    }
+
+    h1, h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    section{
+        padding: 50px 20px 50px 20px;
+    }
+}
